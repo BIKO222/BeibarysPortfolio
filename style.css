@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+header h1{
+    font-size: 4rem;
+}
+header p{
+    font-size: 2rem;
+    color: rgb(127, 163, 255);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    border: 4px solid rgb(108, 122, 134);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    border-color: aquamarine;
+}
+nav{
+    padding-top: 20px;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid aquamarine;
+}
+#Home h1{
+    text-align: center;
+    font-size: 2rem;
+}
+#Home p{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+section{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+}
+#fd{
+    color: rgb(127, 163, 255);
+}
+#About h1{
+    text-align: left;
+    font-size: 3.3rem;
+}
+.skill h3{
+    margin-top:30px ;
+}
+.skill p{
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(90, 90, 90);
+    margin-top:5px ;
+    color: aquamarine;
+    border: 2px solid aquamarine;
+}
+.Done{
+    position: relative;
+    top: -420px;
+    text-align: center;
+    float: right;
+}
+.stat h4{
+    padding: 20px;
+    font-size: 2rem;
+    background-color: rgb(80, 80, 80);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.stat p{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    rotate: 90deg;
+    left: 15%;
+    position: relative;
+    top: -200px;
+}
+#Contact{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    translate: -65% ;
+    margin-top: 250px;
+    font-size: 2rem;
+}
+#Contact a{
+    margin-top: 50px;
+}
+#Contact h1{
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+#Cost h1{
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+#Cost .One{
+    background-color: gray;
+    color: black;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.One .pg{
+    font-size: 3rem;
+    text-align: center;
+}
+.lg{
+    font-size: 2rem;
+    text-align: left;
+    color: aquamarine;
+    padding-top: 50px;
+    word-wrap:break-word;
+}
+.One h3{
+    font-size: 2rem;
+    padding-top: 50px;
+}
+.One button{
+    margin-top: 50px;
+    padding: 10px;
+    font-size:large;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+}
+#Cost .Two{
+    background-color: gray;
+    color: black;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -760px;
+    left: 500px;
+    border: 1px solid black;
+}
+#Cost .One,
+#Cost .Two{
+    height: 700px;
+}
+.Two .pg{
+    font-size: 3rem;
+    text-align: center;
+}
+.lg{
+    font-size: 2rem;
+    text-align: left;
+    color: aquamarine;
+    padding-top: 50px;
+    word-wrap:break-word;
+}
+.Two h3{
+    font-size: 2rem;
+    padding-top: 50px;
+}
+.Two button{
+    margin-top: 50px;
+    padding: 10px;
+    font-size:large;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    text-decoration: none;
+    color: white;
+    border: 4px solid rgb(108, 122, 134);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border-color: aquamarine;
+}
+footer{
+    padding: 100px;
+}
+/* Добавляем стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 10px 0;
+        display: block;
+    }
+    section {
+        margin-top: 50px;
+    }
+    .Done {
+        top: initial;
+    }
+    .line {
+        display: none;
+    }
+    #Contact {
+        margin-top: 50px;
+    }
+    #Cost .One, #Cost .Two {
+        height: auto;
+        margin-bottom: 50px;
+        position: relative;
+        top: initial;
+        left: initial;
+    }
+    .stat{
+        display: none;
+    }
+    *{
+        margin: 10px;
+    }
+}
+
+/* Дополнительные стили для маленьких экранов */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    nav a {
+        padding: 8px;
+    }
+    .skill {
+        width: 100%;
+    }
+    .One, .Two {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:624px) {
+    
+#Contact p,
+#Contact a{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+}
